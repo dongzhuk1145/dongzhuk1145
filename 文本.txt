@@ -1,0 +1,13 @@
+
+from PIL import Image
+
+# Load the uploaded images
+image_paths = [
+    "/mnt/data/5B4237A8-560E-4BCE-AEBC-7E7EB7616DB9.jpeg",
+    "/mnt/data/9CAE5E1B-E0C6-4FF5-8448-9DD5B0EBD18A.jpeg",
+    "/mnt/data/D175FC8D-9A5C-4F4B-AC15-4D6BCF8361DB.jpeg"
+]
+
+# Open the images
+images = [Image.open(image_path) for image_path in image_paths]
+images
